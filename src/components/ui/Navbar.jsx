@@ -8,9 +8,9 @@ import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Rooms", href: "/#rooms" },
+  { name: "Rooms", href: "/rooms" },
   { name: "Menu", href: "/menu" },
-  { name: "Gallery", href: "/#gallery" },
+  { name: "Gallery", href: "/gallery" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
