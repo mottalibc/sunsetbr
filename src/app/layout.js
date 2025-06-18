@@ -18,6 +18,9 @@ export const metadata = {
   title: "Sunset Beach Resort | Relax in Paradise",
   description:
     "Book your stay at Sunset Beach Resort in Cox’s Bazar. Enjoy sea view rooms, beach side camp, delicious food, and a relaxing beach experience.",
+  other: {
+    "google-site-verification": "Dzt64zLBc5m8GduDAjqNfiLQmK0rEw5ttJe5dEhMYfE",
+  },
   keywords: [
     "Sunset Beach Resort",
     "Cox's Bazar resort",
