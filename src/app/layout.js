@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
+import WhatsappButton from "@/components/ui/WhatsappButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -58,16 +59,16 @@ export const metadata = {
     "Hotel with private beach Cox’s Bazar",
   ],
   authors: [
-    { name: "Sunset Beach Resort Team", url: "https://yourdomain.com" },
+    { name: "Sunset Beach Resort Team", url: "https://sunsetbeachresort.info" },
   ],
   openGraph: {
     title: "Sunset Beach Resort",
-    description: "Experience the best beachfront resort in Cox’s Bazar (Inani)",
-    url: "https://yourdomain.com",
+    description: "Experience the best beachfront resort in Cox’s Bazar",
+    url: "https://sunsetbeachresort.info",
     siteName: "Sunset Beach Resort",
     images: [
       {
-        url: "/image/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Sunset Beach Resort view",
@@ -80,9 +81,9 @@ export const metadata = {
     card: "summary_large_image",
     title: "Sunset Beach Resort",
     description: "Relax at the best beachfront hotel in Cox’s Bazar",
-    images: ["/image/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://sunsetbeachresort.info"),
 };
 
 export default function RootLayout({ children }) {
@@ -93,6 +94,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <WhatsappButton />
         <Footer />
       </body>
     </html>

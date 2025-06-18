@@ -7,6 +7,8 @@ import {
   Youtube,
 } from "lucide-react";
 import GoogleMap from "./GoogleMap";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -14,6 +16,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Logo & Info */}
         <div>
+          <Image
+            src={"/logo.png"}
+            width={60}
+            height={60}
+            alt="logo"
+            className="h-auto w-auto"
+          />
           <h2 className="text-2xl font-bold mb-3">Sunset Beach Resort</h2>
           <p className="text-gray-400 mb-4">
             Escape to tranquility. Enjoy nature, sea, and cozy stays with us at
@@ -21,7 +30,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-3 mt-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/share/1JtHkvfKv7/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -70,8 +79,17 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-10 border-t border-gray-700 py-5 text-center text-sm text-gray-400">
+      <div className="mt-10 border-t border-gray-700 py-5 text-center text-sm text-gray-400 flex flex-col items-center">
         &copy; Sunset Beach Resort. All rights reserved.
+        <div>
+          made with ❤️ by{" "}
+          <Link
+            href="https://www.facebook.com/motochowdhury2nd"
+            target="_blank"
+          >
+            Mottalib
+          </Link>
+        </div>
       </div>
     </footer>
   );

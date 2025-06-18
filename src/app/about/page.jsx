@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useHashScroll } from "@/hooks/useHashScroll";
 
 export const metadata = {
   title: "About Sunset Beach Resort",
@@ -7,6 +9,7 @@ export const metadata = {
 };
 
 export default function AboutPage() {
+  useHashScroll();
   return (
     <main className="min-h-screen mt-9 bg-white px-4 py-20 text-gray-900">
       <section className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-12">

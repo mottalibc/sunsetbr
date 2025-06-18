@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,10 +10,12 @@ import {
   Instagram,
   Twitter,
 } from "lucide-react";
+import { useHashScroll } from "@/hooks/useHashScroll";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  useHashScroll();
 
   const handleSubmit = (e) => {
     e.preventDefault();

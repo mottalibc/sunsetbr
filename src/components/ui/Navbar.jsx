@@ -8,9 +8,9 @@ import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Rooms", href: "#rooms" },
+  { name: "Rooms", href: "/#rooms" },
   { name: "Menu", href: "/menu" },
-  { name: "Gallery", href: "#gallery" },
+  { name: "Gallery", href: "/#gallery" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
@@ -35,7 +35,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-gray-900">
-            <img src="/image/logo.png" width={"70px"} alt="" srcSet="" />
+            <img src="/logo.png" width={"70px"} alt="" srcSet="" />
           </Link>
 
           {/* Desktop nav */}
@@ -62,7 +62,7 @@ export default function Navbar() {
                   className="text-gray-800 focus:outline-none"
                 >
                   <Equal
-                    className={`w-6 h-6 ${
+                    className={`w-10 h-10 ${
                       isScrolled ? "text-white" : "text-orange-400"
                     }`}
                   />

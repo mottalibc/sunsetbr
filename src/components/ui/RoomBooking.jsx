@@ -17,7 +17,8 @@ const rooms = [
       "/rooms/room-view-3.jpg",
       "/rooms/room-view-4.jpg",
     ],
-    video: "/rooms/room-tour.mp4",
+    video:
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/videos/Room-Tour.mp4",
     description:
       "Nestled just steps from a private beach, our Pod House Room offers a cozy, modern stay with a stunning sea view. Perfect for couples or small families, this fully furnished smart pod combines privacy, comfort, and eco-chic living right by nature.",
     features: [
@@ -39,7 +40,8 @@ const rooms = [
       "/rooms/tant-in-resort-ground.jpg",
       "/rooms/tant.jpg",
     ],
-    video: "/rooms/camp-tour.mp4",
+    video:
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/videos/Camp-Tour.mp4",
     description:
       "Immerse yourself in a natural riverside and beachside setting with our cozy Beach Side Camp. Ideal for nature lovers and groups, this experience offers starlit skies, bonfires, and a rustic escape just minutes from Coxs Bazar.",
     features: [
@@ -55,7 +57,7 @@ const rooms = [
   },
 ];
 
-export default function RoomBooking() {
+export default function RoomBooking({ roomName }) {
   const [selectedRoom, setSelectedRoom] = useState(null);
   const [lightboxIndex, setLightboxIndex] = useState(-1);
   const [floatingBtnVisible, setFloatingBtnVisible] = useState(false);
@@ -77,6 +79,12 @@ export default function RoomBooking() {
   }, [selectedRoom]);
 
   const lightboxSlides = selectedRoom?.images.map((src) => ({ src })) || [];
+  const handleClick = (room) => {
+    const message = `Hi, I'm interested in booking the "${room}"`;
+    const encodedMessage = encodeURIComponent(message);
+    const url = `https://wa.me/8801624888044?text=${encodedMessage}`;
+    window.open(url, "_blank");
+  };
 
   return (
     <section id="rooms" className="py-16 px-4 max-w-7xl mx-auto">
@@ -127,10 +135,7 @@ export default function RoomBooking() {
 
       {/* Modal */}
       {selectedRoom && (
-        <div
-          onClick={() => setSelectedRoom(null)}
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm overflow-y-auto"
-        >
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm overflow-y-auto">
           <div className="flex justify-center items-start min-h-screen px-4 py-10">
             <div className="relative bg-white rounded-xl shadow-xl w-full max-w-3xl max-h-[90vh] overflow-y-auto hide-scrollbar">
               {/* Close button */}
@@ -195,7 +200,10 @@ export default function RoomBooking() {
 
                 {/* Booking button in flow */}
                 <div ref={bookingBtnRef}>
-                  <button className="mt-6 w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 transition font-semibold">
+                  <button
+                    onClick={() => handleClick(selectedRoom.name)}
+                    className="mt-6 w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 transition font-semibold"
+                  >
                     Book Now
                   </button>
                 </div>
@@ -205,7 +213,10 @@ export default function RoomBooking() {
 
           {/* Floating Booking Button */}
           {floatingBtnVisible && (
-            <div className="fixed bottom-20 left-1/2 -translate-x-1/2 z-[9999]">
+            <div
+              onClick={() => handleClick(selectedRoom.name)}
+              className="fixed bottom-20 left-1/2 -translate-x-1/2 z-[9999]"
+            >
               <button className="px-8 bg-black text-white py-3 rounded-full shadow-xl font-semibold hover:bg-gray-800 transition">
                 Book Now
               </button>

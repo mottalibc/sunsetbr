@@ -7,10 +7,10 @@ export const metadata = {
 };
 
 const menuImages = [
-  "/menu/menu-1.jpg",
-  "/menu/menu-2.jpg",
-  "/menu/menu-3.jpg",
-  "/menu/menu-4.jpg",
+  "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/menu/menu-1.jpg",
+  "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/menu/menu-2.jpg",
+  "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/menu/menu-3.jpg",
+  "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/menu/menu-4.jpg",
 
   // Add more images like "/menu/fish.jpg"
 ];
