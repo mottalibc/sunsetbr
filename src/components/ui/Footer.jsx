@@ -17,7 +17,9 @@ export default function Footer() {
         {/* Logo & Info */}
         <div>
           <Image
-            src={"/logo.png"}
+            src={
+              "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/logo.PNG"
+            }
             width={60}
             height={60}
             alt="logo"

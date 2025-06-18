@@ -35,7 +35,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-gray-900">
-            <img src="/logo.png" width={"70px"} alt="" srcSet="" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/logo.PNG"
+              width={"70px"}
+              alt=""
+              srcSet=""
+            />
           </Link>
 
           {/* Desktop nav */}

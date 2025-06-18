@@ -9,7 +9,7 @@ const AboutContent = () => {
       <div className="w-full lg:w-1/2">
         <div className="overflow-hidden rounded-xl shadow-sm">
           <Image
-            src="/owner.jpg"
+            src="https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/owner.jpg"
             alt="Resort Founder"
             width={600}
             height={600}
