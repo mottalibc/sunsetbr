@@ -12,7 +12,7 @@ export default function Hero() {
         playsInline
         preload="auto" // Suggest the browser to preload the video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        poster="https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/poster.jpg"
+        poster="/poster.jpg"
       >
         <source
           src="https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/videos/Welcome-Video.mp4"
