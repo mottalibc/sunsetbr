@@ -76,9 +76,10 @@ export default function ContactPage() {
                 latitude: 21.284141,
                 longitude: 92.048458,
               },
-              image: "https://sunsetbeachresort.info/og-image.jpg",
+              image:
+                "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/og-image.jpg",
               sameAs: [
-                "https://www.facebook.com/sunsetbeachresort",
+                "https://www.facebook.com/ssunsetbr",
                 "https://www.instagram.com/sunsetbeachresort",
               ],
             }),

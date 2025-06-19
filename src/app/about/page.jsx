@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "Sunset Beach Resort",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "About Sunset Beach Resort",
@@ -41,7 +41,9 @@ export const metadata = {
     title: "About Sunset Beach Resort",
     description:
       "Discover the story and philosophy behind Sunset Beach Resort, your perfect getaway at Cox’s Bazar.",
-    images: ["/og-image.jpg"],
+    images: [
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/og-image.jpg",
+    ],
   },
   metadataBase: new URL("https://sunsetbeachresort.info"),
 };

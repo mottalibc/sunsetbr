@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "Sunset Beach Resort",
     images: [
       {
-        url: "https://sunsetbeachresort.info/og-image.jpg",
+        url: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Sunset Beach Resort in Cox’s Bazar – Gallery",
@@ -41,7 +41,9 @@ export const metadata = {
     title: "Gallery | Sunset Beach Resort",
     description:
       "View photos and videos of our sea-facing rooms, beach, and camping experiences in Cox’s Bazar.",
-    images: ["https://sunsetbeachresort.info/og-image.jpg"],
+    images: [
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/og-image.jpg",
+    ],
   },
   metadataBase: new URL("https://sunsetbeachresort.info"),
 };

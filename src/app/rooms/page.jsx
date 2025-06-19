@@ -28,7 +28,7 @@ export const metadata = {
     siteName: "Sunset Beach Resort",
     images: [
       {
-        url: "https://sunsetbeachresort.info/og-image.jpg",
+        url: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Rooms at Sunset Beach Resort, Inani Beach, Cox’s Bazar",
@@ -42,7 +42,9 @@ export const metadata = {
     title: "Rooms | Sunset Beach Resort",
     description:
       "Explore our beachfront rooms in Inani Beach, Cox’s Bazar. Book your stay with sea views and natural vibes.",
-    images: ["https://sunsetbeachresort.info/og-image.jpg"],
+    images: [
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/og-image.jpg",
+    ],
   },
   metadataBase: new URL("https://sunsetbeachresort.info"),
 };
