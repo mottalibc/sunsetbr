@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Sunset Beach Resort | Relax in Paradise",
+  title: "Sunset Beach Resort Cox’s Bazar | Sea View & Private Beach",
   description:
-    "Book your stay at Sunset Beach Resort in Cox’s Bazar. Enjoy sea view rooms, beach side camp, delicious food, and a relaxing beach experience.",
+    "Book your stay at Sunset Beach Resort in Cox’s Bazar. Enjoy stunning sunsets, sea view rooms & a private beach. Perfect for families, couples & friends!",
   other: {
     "google-site-verification": "Dzt64zLBc5m8GduDAjqNfiLQmK0rEw5ttJe5dEhMYfE",
   },
@@ -60,6 +60,12 @@ export const metadata = {
     "Weekend getaway resort Cox’s Bazar",
     "Swimming pool resort in Cox’s Bazar",
     "Hotel with private beach Cox’s Bazar",
+    "Resort Near me",
+    "Hotel Near me",
+    "Hotel Near himchori",
+    "Hotel Near inani",
+    "Uncommon resort",
+    "Unique resort",
   ],
   authors: [
     { name: "Sunset Beach Resort Team", url: "https://sunsetbeachresort.info" },
@@ -71,7 +77,7 @@ export const metadata = {
     siteName: "Sunset Beach Resort",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Sunset Beach Resort view",
@@ -84,7 +90,9 @@ export const metadata = {
     card: "summary_large_image",
     title: "Sunset Beach Resort",
     description: "Relax at the best beachfront hotel in Cox’s Bazar",
-    images: ["/og-image.jpg"],
+    images: [
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/og-image.jpg",
+    ],
   },
   metadataBase: new URL("https://sunsetbeachresort.info"),
 };

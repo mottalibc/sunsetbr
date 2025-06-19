@@ -23,12 +23,17 @@ export default function Hero() {
 
       {/* Overlay Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4 bg-black/40">
-        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-4 drop-shadow-md">
-          Welcome to Our Resort
+        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-4 drop-shadow-md w-[70%]">
+          Welcome to Sunset Beach Resort – Cox’s Bazar
         </h1>
-        <p className="text-white/90 text-lg sm:text-xl mb-6 max-w-xl">
-          An Eco Escape by the Sea — Experience Nature, Riverfront Calm, and
-          Oceanfront Dining.
+        <p className="text-white/90 text-lg sm:text-xl mb-6 max-w-3xl">
+          Experience breathtaking sunsets and sea views from the comfort of your
+          private beachside room. Located just minutes from Himchari and Inani
+          Beach, our resort is the perfect getaway for couples, families, and
+          friends seeking peace and relaxation in Bangladesh’s most scenic
+          coastline. Enjoy romantic beachfront dinners, sunrise yoga, and
+          exclusive access to our private beach. Book now for the best rates on
+          sea view rooms in Cox’s Bazar!
         </p>
         <Link
           href="https://wa.me/+8801624888044?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20resort%20and%20room%20availability%20through%20your%20website."
