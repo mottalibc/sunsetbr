@@ -12,10 +12,10 @@ const rooms = [
   {
     name: "Pod House Room",
     images: [
-      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/room-view.jpg",
-      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/room-view-2.jpg",
-      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/room-view-3.jpg",
-      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/room-view-4.jpg",
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/room-view-v2.webp",
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/room-view-2-v2.webp",
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/room-view-3-v2.webp",
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/room-view-4-v2.webp",
     ],
     video:
       "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/videos/Room-Tour.mp4",
@@ -35,10 +35,10 @@ const rooms = [
   {
     name: "Beach Side Camp",
     images: [
-      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/beach-camp.jpg",
-      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/night-camp.jpg",
-      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/tant-in-resort-ground.jpg",
-      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/tant.jpg",
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/beach-camp-v2.webp",
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/night-camp-v2.webp",
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/tant-in-resort-ground-v2.webp",
+      "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/rooms/tant-v2.webp",
     ],
     video:
       "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/videos/Camp-Tour.mp4",

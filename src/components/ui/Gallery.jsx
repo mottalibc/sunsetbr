@@ -12,82 +12,82 @@ import VideoGallery from "./VideoGallery";
 
 const images = [
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day1.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day1-v2.webp",
     title: "Daylight view of the pod house",
     description: "Best view of pod house with clear sky",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day2.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day2-v2.webp",
     title: "Green trees with pod",
     description: "Trees with the pod house with a beautiful view",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day3.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day3-v2.webp",
     title: "Pod house with hammock",
     description: "Enjoy the best view with hammock in front of your room",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day4.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day4-v2.webp",
     title: "View of pod houses",
     description: "Beautifully aligned pod houses",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day5.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day5-v2.webp",
     title: "Pods and jhaw bon under clear sky",
     description: "Pods look like elements of the sky",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day6.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/day6-v2.webp",
     title: "Resort view from the road",
     description: "Stunning view of the resort from the road",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/camp.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/camp-v2.webp",
     title: "Beach side camp",
     description: "Peaceful beach camp with scenic views",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/campfire.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/campfire-v2.webp",
     title: "Camp fire with friends",
     description: "Enjoyable beachside campfire with friends",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/night1.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/night1-v2.webp",
     title: "Night view of resort",
     description: "Magical night views with loved ones",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant1.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant1-v2.webp",
     title: "Restaurant daytime view",
     description: "Ocean view restaurant in daylight",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant2.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant2-v2.webp",
     title: "Restaurant night view",
     description: "Romantic night at the ocean view restaurant",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant3.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant3-v2.webp",
     title: "Restaurant and jhaw bon",
     description: "Eye-catching view with jhaw bon",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant4.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant4-v2.webp",
     title: "Enjoying amazing food",
     description: "Delicious meals with friends",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant5.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant5-v2.webp",
     title: "Dinner at night",
     description: "Night meal beside the ocean",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant6.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/restaurant6-v2.webp",
     title: "Dinner with friends",
     description: "Ocean-side dinner with friends",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/boat.jpg",
+    src: "https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/gallery/boat-v2.webp",
     title: "Boat beside resort",
     description: "Crossing the river with a traditional boat",
   },
