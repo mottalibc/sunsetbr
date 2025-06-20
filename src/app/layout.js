@@ -100,6 +100,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Preload poster.webp image */}
+        <link rel="preload" as="image" href="/poster.webp" type="image/webp" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

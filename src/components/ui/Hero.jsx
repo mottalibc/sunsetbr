@@ -10,9 +10,9 @@ export default function Hero() {
         loop
         muted
         playsInline
-        preload="auto" // Suggest the browser to preload the video
+        preload="metadata" // Changed from "auto" to "metadata" to speed up loading
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        poster="/poster.jpg"
+        poster="/poster.webp" // Use optimized WebP poster instead of jpg
       >
         <source src="/hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
