@@ -14,10 +14,7 @@ export default function Hero() {
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         poster="/poster.jpg"
       >
-        <source
-          src="https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/videos/Welcome-Video.mp4"
-          type="video/mp4"
-        />
+        <source src="/hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
