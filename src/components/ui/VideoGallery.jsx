@@ -83,6 +83,7 @@ export default function VideoGallery() {
                 preload="metadata"
                 muted
                 playsInline
+                loading="lazy"
               >
                 <source src={video.src} type="video/mp4" />
               </video>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
@@ -96,58 +96,91 @@ const images = [
 export default function Gallery() {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
-  const [visibleCount, setVisibleCount] = useState(4); // Show 6 images initially
+  const [visibleCount, setVisibleCount] = useState(4);
+  const [galleryVisible, setGalleryVisible] = useState(false);
+  const galleryRef = useRef(null);
 
   const loadMore = () => {
-    setVisibleCount(images.length); // show all images at once
+    setVisibleCount(images.length);
   };
+
+  useEffect(() => {
+    if (!galleryRef.current) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setGalleryVisible(true);
+          observer.disconnect();
+        }
+      },
+      {
+        rootMargin: "100px",
+        threshold: 0.1,
+      }
+    );
+
+    observer.observe(galleryRef.current);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section id="gallery" className="py-16 px-4 max-w-7xl mx-auto">
       <VideoGallery />
+
       <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
         Gallery
       </h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {images.slice(0, visibleCount).map((img, i) => (
-          <div
-            key={i}
-            className="cursor-pointer group"
-            onClick={() => {
-              setIndex(i);
-              setOpen(true);
-            }}
-          >
-            {/* Wrapper with fixed dimensions for fill */}
-            <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
-              <Image
-                src={img.src}
-                alt={img.title}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                className="object-cover group-hover:opacity-80 transition"
-                priority={i < 4}
-                loading={i >= 4 ? "lazy" : undefined}
-              />
+      <div ref={galleryRef}>
+        {galleryVisible ? (
+          <>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              {images.slice(0, visibleCount).map((img, i) => (
+                <div
+                  key={i}
+                  className="cursor-pointer group"
+                  onClick={() => {
+                    setIndex(i);
+                    setOpen(true);
+                  }}
+                >
+                  <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+                    <Image
+                      src={img.src}
+                      alt={img.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover group-hover:opacity-80 transition"
+                      priority={i < 4}
+                      loading={i >= 4 ? "lazy" : undefined}
+                    />
+                  </div>
+                  <p className="text-sm mt-2 text-center text-gray-700">
+                    {img.title}
+                  </p>
+                </div>
+              ))}
             </div>
-            <p className="text-sm mt-2 text-center text-gray-700">
-              {img.title}
-            </p>
-          </div>
-        ))}
-      </div>
 
-      {visibleCount < images.length && (
-        <div className="flex justify-center mt-8">
-          <button
-            onClick={loadMore}
-            className="px-6 py-2 bg-black text-white text-sm rounded-full hover:bg-gray-800 transition"
-          >
-            Load More
-          </button>
-        </div>
-      )}
+            {visibleCount < images.length && (
+              <div className="flex justify-center mt-8">
+                <button
+                  onClick={loadMore}
+                  className="px-6 py-2 bg-black text-white text-sm rounded-full hover:bg-gray-800 transition"
+                >
+                  Load More
+                </button>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className="h-48 flex items-center justify-center text-gray-400">
+            Loading gallery...
+          </div>
+        )}
+      </div>
 
       <Lightbox
         open={open}
