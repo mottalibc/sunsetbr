@@ -5,6 +5,7 @@ import { Equal, X } from "lucide-react";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer"; // ShadCN Drawer
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
+import Image from "next/image";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -35,12 +36,16 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-gray-900">
-            <img
-              src="https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/logo.PNG"
-              width={"70px"}
-              alt=""
-              srcSet=""
-            />
+            <div className="relative w-[70px] h-[50px]">
+              <Image
+                src="https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/logo.PNG"
+                alt="Logo"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 40px, 70px"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop nav */}

@@ -119,14 +119,16 @@ export default function Gallery() {
               setOpen(true);
             }}
           >
-            <div className="relative w-full h-48 rounded-lg overflow-hidden">
+            {/* Wrapper with fixed dimensions for fill */}
+            <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
               <Image
                 src={img.src}
                 alt={img.title}
                 fill
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="object-cover group-hover:opacity-80 transition"
-                {...(i < 4 ? { priority: true } : { loading: "lazy" })}
+                priority={i < 4}
+                loading={i >= 4 ? "lazy" : undefined}
               />
             </div>
             <p className="text-sm mt-2 text-center text-gray-700">
