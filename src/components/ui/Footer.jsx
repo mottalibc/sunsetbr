@@ -31,19 +31,30 @@ export default function Footer() {
             Cox's Bazar.
           </p>
           <div className="flex gap-3 mt-4">
-            <a
+            <Link
               href="https://www.facebook.com/share/1JtHkvfKv7/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit our Facebook page"
             >
               <Facebook className="hover:text-blue-500" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link
+              href="#"
+              target="_blank"
+              aria-label="Visit our Instagram"
+              rel="noopener noreferrer"
+            >
               <Instagram className="hover:text-pink-400" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link
+              href="#"
+              target="_blank"
+              aria-label="Visit our Youtube"
+              rel="noopener noreferrer"
+            >
               <Youtube className="hover:text-red-500" />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -60,18 +71,23 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Phone size={20} />
-              <a href="tel:+8801624888044" className="hover:underline">
+              <Link
+                href="tel:+8801624888044"
+                aria-label="Call us"
+                className="hover:underline"
+              >
                 +8801624888044
-              </a>
+              </Link>
             </li>
             <li className="flex items-center gap-2">
               <Mail size={20} />
-              <a
+              <Link
                 href="mailto:susetbeachresort44@gmail.com"
+                aria-label="Email Us"
                 className="hover:underline"
               >
                 sunsetbeachresort44@gmail.com
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -88,7 +104,9 @@ export default function Footer() {
           <Link
             href="https://www.facebook.com/motochowdhury2nd"
             target="_blank"
+            aria-label="Visit Developer Facebook profile"
           >
+            <span className="sr-only">Developer facebook Profile</span>
             Mottalib
           </Link>
         </div>
