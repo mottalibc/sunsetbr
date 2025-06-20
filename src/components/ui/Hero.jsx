@@ -14,7 +14,10 @@ export default function Hero() {
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         poster="/poster.webp" // Use optimized WebP poster instead of jpg
       >
-        <source src="/hero-video.mp4" type="video/mp4" />
+        <source
+          src="https://cdn.jsdelivr.net/gh/mottalibc/video-sunsetbr@main/videos/hero-video-v2.mp4"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
 
